@@ -1,0 +1,42 @@
+O Que é Arquitetura Serverless?
+
+Serverless é um modelo de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores. Os servidores ainda são usados nesse modelo, mas eles são abstraídos do desenvolvimento de aplcações. O provedor de nuvem fica responsável pelas tarefas rotineiras de provisionamento, manuntenção e escala da infraestrutura do servidor. Os desenvolvedores só precisam empacotar o código em containers para fazer a implantação.
+Depois da implantação, as aplicações serverless atendem à demanda e aumentam ou diminuem a escala automaticamente de acordo com as necessidades. As soluções serverless dos provedores de nuvem pública costuam ser oferecidas sob demanda por meio de um modelo deexecução orientado a eventos. por isso, não há cobraça pelas funções serverless não utilizadas.
+
+O que é Function as a service(FaaS)?
+
+Uma função como serviço, ou FaaS, é um tipo de serviço de cloud computing que permite que os desenvolvedores criem, executem e gerenciem pacotes deaplicações como funções, sem a necessidade de se preocupar com a manuntenção da infraestrutura.
+Ela é um modelo de execução orientado a eventos que é executado em containers stateless. Essas funções gerenciam a lógica e o estado no lado do servidor usando serviços de um provedor de FaaS.
+
+Quais são os benefícios de usar arquitetura Serverless?
+
+- O principal benefício de usar a arquitetura Serverless é a redução de custo: Você não precisa de uma equipe de infraestrutura para gerenciar e configurar suas aplicações, onde tudo ficará a cargo do provedor de nuvem. 
+- Além de que você só pagará por aquilo que usar: Sua função só fica ativa, no momento que for houver um request para ela, portanto, você nao ficará com a função rodando a todo momento e só pagará por requisições feitas para a mesma. 
+- Segurança: as functions são chamadas por meio de API Gateway, que dependendo da cloud, ela já vem configurada.
+- Implantação: como as partes estarão na nuvem e todas separadas por Functions, ficará mais fácil implantar em vários ambientes.
+
+O que é Cloud Computing (Computação em Nuvem)? E quais são seus benefícios ?
+
+Cloud Computing é o conceito de armazenar e processar dados em servidores remotos (na nuvem) sem a necessidade de ter um servidor local. ela oferece flexbilidade e economia em escalabilidade. você normalmente só paga por serviços que vocẽ usa. 
+Existe 3 tipos ser serviços cloud: 
+- Público: As nuvens públicas são nuvens compartilhadas, onde seu serviço estará na mesma nuvem de serviços de outras empresas, porém de forma segura e só será chamado quando necessário.
+- Privada: Refere-se a recursos de computação em nuvem usados exclusivamente por uma única empresa ou organização. Uma nuvem privada pode ser localizada fisicamente no datacenter local da empresa. Algumas empresas também pagam a provedores de serviços terceirizados para hospedar sua nuvem privada. Uma nuvem privada é aquela em que os serviços e a infraestrutura são mantidos em uma rede privada.
+-Hibrida: Combinam nuvens públicas e privadas, unidas por uma tecnologia que permiteque dados e aplicativos sejam compartilhados entre elas. Ao permitir que dadose aplicativos se movam entre nuvens públicase privadas, uma nuvem híbrida oferece maior flexibilidade à sua empresa, mais opções de implantação e ajuda a otimizar sua infraestrutura, segurança econformidade existentes.
+
+Os beneficios são:
+- Baixo custo de operações, já que você só paga por aquela quantidade que uso e por eliminar a necessidade de gastos com hardware e software e configuração e execução de datacenters no local.
+- Velocidade: A maioria dos serviços de computação em nuvem é fornecida por autoatendimento e sob demanda, portanto, até mesmo grandes quantidades de recursos de computação podem ser provisionadas em minutos, normalmente com apenas alguns cliques do mouse, dando às empresas muita flexibilidadee reduzindo a pressão do planejamento de capacidade.
+- Confiabilidade: A computação em nuvem torna o backup de dados, a recuperação de desastres e a continuidade dos negócios mais fáceis e menosdispendiosos porque os dados podemser espelhados em vários sites redudantes na rededo provedor de nuvem.
+- Segurança: Muitos provedores de nuvem oferecem um amplo conjunto de políticas, tecnologias e controles que fortalecem sua postura geral de segurança, ajudando a proteger seus dados, aplicativos e infraestrutura contra possíveis ameaças.
+- Escalabilidade: Os benefícios dos serviçosdecomputação em nuvem incluem a capacidade de escalar elasticamente. Emtermos de nuvem, isso significa fornecer a quantidade certa de recursos de TI - Por exemplo, mais ou menos poder de computação, armazenamento, largura de banda - exatamente quando necessário e da localização geográfica correta.
+
+Quais são as principais diferenças entre Arquitetura Monolítica, Microsserviços e Serverless?
+
+na arquitetura monolitica, a aplicação fica toda encapsulada dentro de um único processo e costuma usar um servidor local com um único banco de dados.
+
+já na arquitetura de microsserviços a aplicação é separada por várias serviços, que se podem ser feitos por várias linguagens de programação diferentes e vários banco de dados, e se comunicam por meio de API, Mensageria e orientado a eventos. Geralmente as partes do microserviços são separadas por containers.
+
+na arquitetura Serverless é eliminada a necessidade de configuração de infraestrutura, é executado funções para o container com o código empacotado a ser executado, que é controlado por API GATEWAY que identifica a função que deve ser chamada, além de que a função não fica no ar o tempo todo, ela é chamada por demanda e fica por um tempo ativa até que hiberna até ser chamada novamente.
+
+
+
